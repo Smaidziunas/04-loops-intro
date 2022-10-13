@@ -8,5 +8,5 @@
 
   [loopToHtml.js](js/loopToHtml.js)
 
-- second
+-
 - third

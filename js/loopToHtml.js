@@ -23,19 +23,21 @@ console.log('loopToHtml.js');
 
 
 
-// ========== ANTRAS Example FOR; idedam li cikla i Html;
+// ========== ANTRAS Example FOR; idedam li cikla i UL, (nededam i Html);
 
 
-const listEl = document.getElementById('list');
+// const listEl = document.getElementById('list');
 // prisitraukiam dokumenta
 
-let listHTML = '';
+let listUl = '<ul>';
 // tuscias variable; 
 
 for (let i= 4; i < 7; i++) {
-  console.log(`<li>item ${i}</li>`);
+  let liEl = `<li>${i}</li>`;
+  // console.log(liEl);
 
-  listHTML = listHTML + `<li>${i}</li>\n`;
-}
+  listUl = listUl + liEl + `\n`;
+} listUl = listUl + '</ul>';
+console.log(listUl);
 
-listEl.innerHTML = listHTML;
+// listEl.innerHTML = listHTML;
